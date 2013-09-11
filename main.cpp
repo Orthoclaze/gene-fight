@@ -1,9 +1,9 @@
-#include "cell.h"
+#include "cellBitString.h"
 
 int main()
 {
 	int x = 20;
-	cell creature;
+	cellBitString creature;
 	creature.showChromosome();
 	return 0;
 };

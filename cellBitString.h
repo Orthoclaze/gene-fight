@@ -1,16 +1,21 @@
-#ifndef CELL_BIT_STRING 
-#define CELL_BIT_STRING 
+#ifndef CELL_BIT_STRING_H
+#define CELL_BIT_STRING_H
 
 #include <cstdlib>
+#include <iostream>
+#include <string>
 #include <vector>
+
+using namespace std;
 
 class cellBitString
 {
 	private:
 	int bases;
-	std::vector<bool> chromosome;	
+	vector<bool> chromosome;	
 
-	public:	
+	public:
+	cellBitString();	
 	void showChromosome();
 };
 #endif

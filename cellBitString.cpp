@@ -1,16 +1,17 @@
-#include "cellBitString.h"
-
-#include <iostream>
 #include <cstdlib>
+#include <iostream>
+#include <string>
 #include <vector>
+
+#include "cellBitString.h"
 
 using namespace std;
 
-cellBitString::cellBitString(int getBases)
+cellBitString::cellBitString()
 {
-	bases = getBases;
+	bases = 20;
 	chromosome.resize(bases);
-};
+}
 
 void cellBitString::showChromosome()
 {
@@ -19,5 +20,8 @@ void cellBitString::showChromosome()
 		cout << chromosome[x];
 	}
 	cout << endl;
-};
+}
+
+//int main(){return 0;}
+// Put this bit in to compile this thing by itself
 
